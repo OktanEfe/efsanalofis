@@ -11,6 +11,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "EF Sanal Ofis - Kocaeli'de Modern Sanal Ofis Çözümleri",
+  
   description:
     "EF Sanal Ofis, Kocaeli merkezli sanal ofis, yasal adres ve hazır ofis hizmetleri sunar. Girişimciler, freelancerlar ve KOBİ'ler için modern, ekonomik ve prestijli ofis çözümleri.",
   keywords:
@@ -38,6 +39,10 @@ export const metadata: Metadata = {
     title: "EF Sanal Ofis - Kocaeli'de Sanal Ofis Hizmetleri",
     description: "Girişimciler ve işletmeler için uygun fiyatlı sanal ofis çözümleri.",
     images: ["/images/Favicon.png"],
+  },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
   },
   robots: {
     index: true,
