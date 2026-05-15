@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function CtaBanner() {
   return (
-    <section className="py-16 md:py-32 bg-[#f2f2f2] font-satoshi overflow-hidden">
+    <section className="relative py-16 md:py-32 bg-[#f2f2f2] font-satoshi overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <motion.div
           initial={{ opacity: 0, scale: 0.98 }}

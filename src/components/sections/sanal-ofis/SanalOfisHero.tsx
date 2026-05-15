@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const slides = [
   {
-    bg: "/images/yasaladres.png",
+    bg: "/images/yasaladres.jpg",
     title: "Şirketinizi <br/> <span class='text-[#ffbe00]'>Bugün Kurun.</span>",
     desc: "EF Sanal Ofis, minimum yatırım ile maksimum prestij sağlar. Yasal adresiniz dakikalar içinde hazır.",
     btn: "Süreci Başlat",
@@ -18,7 +18,7 @@ const slides = [
     btn: "Hemen Başvur",
   },
   {
-    bg: "/images/prestij.png",
+    bg: "/images/prestij.jpg",
     title: "Birlikte Daha <br/> <span class='text-[#ffbe00]'>Büyük İşlere.</span>",
     desc: "Kocaeli'nin merkezinde yasal adres ve kurumsal iletişim desteğiyle prestijli bir başlangıç yapın.",
     btn: "Detayları Gör",
@@ -37,7 +37,7 @@ export default function SanalOfisHero() {
 
   return (
     <section className="relative h-[90vh] min-h-[600px] w-full bg-black overflow-hidden">
-      <AnimatePresence mode="popLayout">
+      <AnimatePresence mode="wait">
         <motion.div
           key={current}
           initial={{ opacity: 0, scale: 1.1 }}

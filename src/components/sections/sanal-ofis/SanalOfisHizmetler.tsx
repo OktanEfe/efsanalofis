@@ -41,7 +41,7 @@ const itemVariants: Variants = {
 
 export default function SanalOfisHizmetler() {
   return (
-    <section id="hizmetler" className="py-16 md:py-32 bg-[#050505] text-white overflow-hidden font-satoshi">
+    <section id="hizmetler" className="relative py-16 md:py-32 bg-[#050505] text-white overflow-hidden font-satoshi">
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#ffbe00]/5 blur-[120px] rounded-full -mr-64 -mt-64 pointer-events-none" />
       
       <div className="max-w-7xl mx-auto px-6 relative z-10">
