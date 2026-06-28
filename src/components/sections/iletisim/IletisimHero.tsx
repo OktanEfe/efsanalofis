@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function IletisimHero() {
   return (
@@ -11,12 +12,15 @@ export default function IletisimHero() {
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}
           transition={{ duration: 1.5 }}
-          className="w-full h-full"
+          className="w-full h-full relative"
         >
-          <img 
-            src="/images/contact2.jpg" 
-            className="w-full h-full object-cover grayscale opacity-60" 
-            alt="EF Sanal Ofis İletişim" 
+          <Image
+            src="/images/contact2.jpg"
+            alt="EF Sanal Ofis İletişim"
+            fill
+            sizes="100vw"
+            className="object-cover grayscale opacity-60"
+            priority
           />
         </motion.div>
       </div>

@@ -49,10 +49,11 @@ export default function FaqSection() {
                   muted
                   loop
                   playsInline
+                  preload="none"
                   className="w-full h-full"
-                  style={{ 
-                    objectFit: "fill", // Görseldeki taşmayı önlemek için kutuya tam sığdırır
-                    objectPosition: "center" 
+                  style={{
+                    objectFit: "fill",
+                    objectPosition: "center"
                   }}
                 >
                   <source src="/videos/Efsanalofis.mp4" type="video/mp4" />

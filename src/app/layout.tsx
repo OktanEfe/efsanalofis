@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
@@ -9,11 +9,18 @@ import DynamicSmoothScroll from "@/components/ui/DynamicSmoothScroll";
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
+  display: "swap",
+  weight: ["400", "500", "600", "700", "800", "900"],
 });
 
+export const viewport: Viewport = {
+  themeColor: "#ffbe00",
+};
+
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.efsanalofis.com"),
   title: "EF Sanal Ofis - Kocaeli'de Modern Sanal Ofis Çözümleri",
-  
+
   description:
     "EF Sanal Ofis, Kocaeli merkezli sanal ofis, yasal adres ve hazır ofis hizmetleri sunar. Girişimciler, freelancerlar ve KOBİ'ler için modern, ekonomik ve prestijli ofis çözümleri.",
   keywords:
@@ -50,7 +57,6 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  themeColor: "#ffbe00",
   alternates: {
     canonical: "https://www.efsanalofis.com",
   },

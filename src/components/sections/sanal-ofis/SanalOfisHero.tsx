@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
 const slides = [
@@ -44,9 +45,17 @@ export default function SanalOfisHero() {
           animate={{ opacity: 0.6, scale: 1 }}
           exit={{ opacity: 0, scale: 0.95 }}
           transition={{ duration: 1.2, ease: "easeInOut" }}
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url('${slides[current].bg}')` }}
-        />
+          className="absolute inset-0"
+        >
+          <Image
+            src={slides[current].bg}
+            alt=""
+            fill
+            sizes="100vw"
+            className="object-cover object-center"
+            priority={current === 0}
+          />
+        </motion.div>
       </AnimatePresence>
 
       <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black" />
